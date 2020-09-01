@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example</title>
+    </head>
+    <body>
+        <script>
+            //ax +b = 0
+            //input, a, b
+            //x=?
+            var a, b, x;
+            a = parseInt(prompt("nhap vao so a: "));
+            b = parseInt(prompt("nhap vao so b: "));
+            // xử lí
+            //a=0,b=0 pt vô số nghiệm
+            //a=0,b!=0 pt vô nghiệm
+            //a!=0,b=0; x=0/a x=0
+            //a!=0;b!=0; x=-b/a
+            if(a == 0 && b == 0){
+                console.log("Phuong trinh co vo so nghiem");
+            } else if(a == 0 && b != 0){
+                console.log("Phuong trinh vo nghiem");
+            } else if(a !=0 && b== 0){
+                x = 0;
+                console.log(x);
+            } else {
+                x = -b/a
+                console.log("Phuong trinh co nghiem la: ");
+            }
+        </script>
+    </body>
+</html>
